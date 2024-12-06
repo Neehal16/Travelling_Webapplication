@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>webPage</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <style>
+          body {
+            background-image: url('https://img.freepik.com/premium-photo/camera-passport-airplane-light-blue-surface_130265-5039.jpg?semt=ais_hybrid');
+            background-size: cover;
+            background-repeat: no-repeat;
+            filter: brightness(0.6);
+            height: 100vh; 
+            width: 100%;
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            background-position: center;
+        } 
+         
+       
+        .social {
+            padding-left: 30%;
+        }
+    
+        .social h2 {
+            padding-left: 120px;
+        }
+    
+        ul.nav-pills {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+        }
+    
+        ul.nav-pills li {
+            margin: 5px;
+        }
+    
+      
+        @media (max-width: 768px) {
+            body {
+                background-size: contain;
+            }
+    
+            ul.nav-pills {
+                flex-direction: column;
+                align-items: center;
+            }
+    
+            ul.nav-pills li {
+                width: 100%;
+                text-align: center;
+            }
+    
+            .tab-content h1 {
+                font-size: 32px;
+            }
+    
+            .social {
+                padding-left: 10%;
+            }
+    
+            .social h2 {
+                padding-left: 0;
+                text-align: center;
+            }
+    
+            .tab-content h3 {
+                font-size: 16px;
+            }
+    
+            form input, 
+            form button {
+                width: 100%;
+             
+            }
+    
+            marquee {
+                font-size: medium;
+            }
+        }
+    
+        @media (max-width: 480px) {
+            .tab-content h1 {
+                font-size: 24px;
+                text-align: center;
+            }
+    
+            .tab-content h3 {
+                font-size: 14px;
+                text-align: center;
+            }
+    
+            .social {
+                padding-left: 0;
+                text-align: center;
+            }
+    
+            .social img {
+                width: 50px;
+                height: auto;
+            }
+    
+            marquee {
+                font-size: small;
+            }
+        }
+        .log{
+            padding-left: 42%;
+        }
+    </style>
+    
+
+</head>
+
+<body>
+
+    <ul class="nav nav-pills" style="padding-left: 44%;">
+        <li class="nav-item">
+            <a href="#home" class="nav-link" data-toggle="tab" style="color: black; font-size: larger;"><span
+                    class="glyphicon glyphicon-home"></span> Home</a>
+        </li>
+        <li class="nav-item dropdown">
+            <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown"
+                style="color: black; font-size: larger;">Menu</a>
+            <ul class="dropdown-menu" style="background-color: rgb(214, 191, 191);">
+                <li><a href="#" class="dropdown-item">Rooms</a></li>
+                <li><a href="#" class="dropdown-item">Tickets</a></li>
+                <li><a href="#" class="dropdown-item">Hotels</a></li>
+            </ul>
+        </li>
+        <li class="nav-item">
+            <a href="#service" class="nav-link" data-toggle="tab" style="color: black; font-size: larger;"> Services</a>
+        </li>
+        <li class="nav-item">
+            <a href="#contact" class="nav-link" data-toggle="tab" style="color: black; font-size: larger;"><span
+                    class="glyphicon glyphicon-earphone"></span> Contact Us</a>
+        </li>
+        <li class="nav-item">
+            <a href="#about" class="nav-link" data-toggle="tab" style="color: black; font-size: larger;">About Us</a>
+        </li>
+        <li class="nav-item">
+            <a href="#profile" class="nav-link" data-toggle="tab" style="color: black; font-size: larger;"><span
+                    class="glyphicon glyphicon-user"></span> Profile</a>
+        </li>
+    </ul>
+    <div class="tab-content">
+        <div id="home" class="container tab-pane active">
+            <br><br><br>
+
+            <h1
+                style="color: rgb(214, 63, 63); font-size: 53px; font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;text-overflow: clip; padding-left: 20%;">
+                <i class="fa fa-bus"></i> Welcome to Tours & Travels</h1>
+            
+            <h3 style="color: rgb(26, 26, 209); font-family:cursive; text-decoration:underline; padding-left: 35%;">Make Your Weekend With
+                Us</h3>
+            <br>
+            <script>
+                function getage() {
+                    const age = parseInt(document.getElementById("age").value, 10); 
+                    if (age >= 18 && age <= 60) {
+                        window.alert("Eligible For Tour");
+                    } else {
+                        window.alert("Not Eligible For Tour");
+                    }
+                }
+            </script>
+            
+            <form>
+                
+                <h3 style="text-decoration: underline; padding-left: 38%;">Check eligibility for tour</h3>
+                
+                <h3 style="padding-left: 42%;">Enter Your Age:</h3>
+                <input type="text" id="age" placeholder="Enter age" style="height: 33px; margin-left: 36%; width: 24%;">
+                <button type="button" onclick="getage()" class="btn btn-default">Submit</button>
+            </form>
+            <br><br><br><br><br>
+            <marquee style="background-color: rgb(204, 212, 209); font-size: larger; border: 1px solid red;">Note: We
+                are not responsible for your luggage.</marquee>
+        </div>
+        <div id="service" class="container tab-pane">
+            <br><br><br>
+            <h3 style="text-decoration: underline; color: rgb(171, 33, 86); padding-left: 30px;">Our Services:</h3>
+            <br>
+            <ul>
+                <li><h4>We Serve Food 3 Times in a day</h4></li>
+                <li><h4>We Make Your Trip like a Memory</h4></li>
+                <li><h4>We Provide Free Accomodation</h4></li>
+                <li><h4>Pickup & Drop at your Door step</h4></li>
+            </ul>
+        </div>
+        <div id="contact" class="container tab-pane">
+            <br><br><br>
+            <h2 style="color: rgb(160, 81, 16);">For More Information</h2>
+            <h3><strong>Ph: 6301640623</strong></h3>
+            <br>
+            <h3 style="text-decoration: underline;"><span class="glyphicon glyphicon-globe"></span> Search Our Location
+            </h3>
+
+            <a href="https://www.googlemaps.com" target="_blank" style="font-size:x-large;">Google Map</a>
+            <br>
+            <div class="social">
+                <h2>Follow us on</h2>
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcThj2L1mcro33BXavCPkl9GL9KaXntCqLuFWg&s" alt="bbb" >
+            </div>
+        </div>
+        <div id="about" class="container tab-pane">
+            <br><br><br>
+            <h2 style="text-decoration: underline; color: rgb(9, 9, 136);">Address:</h2>
+            <h3>Name: VS NEEHAL</h3>
+            <h3>Near Ayesha Masjid, Bommanahalli, Banglore</h3>
+            <h3>Gmail:vadlashaikneehal@gmail.com</h3>
+        </div>
+        <div id="profile" class="container tab-pane">
+            <br><br>
+            <h2 style="color: rgb(102, 84, 235); padding-left: 48%; ">Log In</h2>
+            
+            <form class="log">
+                <h3 style="padding-left: 10%;">Username</h3>
+                <input type="text" placeholder="Username" style="height: 40px; width: 290px; border-radius: 15px;"><br>
+                <h3 style="padding-left: 10%;">Password</h3>
+                <input type="password" placeholder="Password" style="height: 40px; width: 290px; border-radius: 15px;"><br><br>
+                <button type="button" class="btn btn-danger" style="color: rgb(1, 8, 14); width: 180px; border-radius: 15px; margin-left: 8%;">Submit</button>
+                <br>
+                <b style="padding-left: 7%;">Don't have an account?</b> <a href="https://www.google.com" target="_blank"
+                    style="font-size: large; color: rgb(10, 60, 243); ">Signup</a>
+            </form>
+        </div>
+    </div>
+
+
+</body>
+
+</html>
